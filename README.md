@@ -21,17 +21,6 @@ Este agente é um educador financeiro que **ensina**,  mas não recomenda. Ele a
 
 ---
 
-## 🏗️ Arquitetura
-
-```mermaid
-flowchart TD
-    A[Usuário] --> B[Streamlit]
-    B --> C[Ollama - LLM Local]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Resposta Educativa]
-```
-
 **Stack:**
 - Interface: Streamlit
 - LLM: Ollama (modelo local `gpt-oss`)
