@@ -9,9 +9,9 @@
 Este agente é um educador financeiro que **ensina**,  mas não recomenda. Ele ajuda nos gastos pessoais (ou profissionais) dando informações sobre os dados inseridos, ainda explica conceitos como reserva de emergência, tipos de investimentos e análise de gastos usando uma abordagem didática e exemplos concretos baseados no perfil do cliente.
 
 **O que o agente faz:**
-- ✅ Analisa padrões de gastos de forma educativa
+- ✅ Analisa padrões de gastos e os informa ao cliente
 - ✅ Explica conceitos financeiros de forma simples
-- ✅ Usa dados do cliente como exemplos práticos
+- ✅ Usa dados do cliente fornecidos
 - ✅ Responde dúvidas sobre produtos financeiros
 
 **O que o agente NÃO faz:**
