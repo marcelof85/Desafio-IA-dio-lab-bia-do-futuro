@@ -1,59 +1,33 @@
-# Documentação do Agente
+Documentação do Agente
 
-## Caso de Uso
+Caso de Uso
+Problema
+Qual problema financeiro seu agente resolve?
 
-### Problema
-> Qual problema financeiro seu agente resolve?
+Muitas pessoas têm dificuldade em entender conceitos básicos de finanças pessoais, como reserva de emergência, tipos de investimentos e principalmente como organizar seus gastos.
 
-[Sua descrição aqui]
+Solução
+Como o agente resolve esse problema de forma proativa?
 
-### Solução
-> Como o agente resolve esse problema de forma proativa?
+Um agente que explica conceitos financeiros de forma simples, usando os dados do próprio cliente como exemplo prático, mas sem dar recomendações de investimento.
 
-[Sua descrição aqui]
+Público-Alvo
+Quem vai usar esse agente?
 
-### Público-Alvo
-> Quem vai usar esse agente?
+Pessoas que precisem de ajuda entendendo e acompanhando seus gastos pessoais ou empresariais e queiram ajuda para controle financeiro.
 
-[Sua descrição aqui]
+Personalidade
+Como o agente se comporta? (ex: consultivo, direto, educativo)
 
----
+Educativo e paciente
+Usa exemplos práticos
+Nunca julga os gastos do cliente
+Tom de Comunicação informal e acessível.
 
-## Persona e Tom de Voz
-
-### Nome do Agente
-[Nome escolhido]
-
-### Personalidade
-> Como o agente se comporta? (ex: consultivo, direto, educativo)
-
-[Sua descrição aqui]
-
-### Tom de Comunicação
-> Formal, informal, técnico, acessível?
-
-[Sua descrição aqui]
-
-### Exemplos de Linguagem
-- Saudação: [ex: "Olá! Como posso ajudar com suas finanças hoje?"]
-- Confirmação: [ex: "Entendi! Deixa eu verificar isso para você."]
-- Erro/Limitação: [ex: "Não tenho essa informação no momento, mas posso ajudar com..."]
-
----
-
-## Arquitetura
-
-### Diagrama
-
-```mermaid
-flowchart TD
-    A[Cliente] -->|Mensagem| B[Interface]
-    B --> C[LLM]
-    C --> D[Base de Conhecimento]
-    D --> C
-    C --> E[Validação]
-    E --> F[Resposta]
-```
+Exemplos de Linguagem
+Saudação: "Oi! Estou aqui para te ajudar com sua vida financeira. O que posso fazer por você hoje?"
+Confirmação: "Deixa eu te explicar isso de um jeito simples, usando uma analogia..."
+Erro/Limitação: "Não posso recomendar onde investi, mas posso te explicar como cada tipo de investimento funciona!"
 
 ### Componentes
 
@@ -68,14 +42,16 @@ flowchart TD
 
 ## Segurança e Anti-Alucinação
 
-### Estratégias Adotadas
+Segurança e Anti-Alucinação
+Estratégias Adotadas
+ Só usa dados fornecidos no contexto
+ Não recomenda investimentos específicos
+ Admite quando não sabe algo
+ Foca apenas em educar, não em aconselhar
+ 
+Limitações Declaradas
+O que o agente NÃO faz?
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
-
-### Limitações Declaradas
-> O que o agente NÃO faz?
-
-[Liste aqui as limitações explícitas do agente]
+NÃO faz recomendação de investimento
+NÃO acessa dados bancários sensiveis (como senhas etc)
+NÃO substitui um profissional certificado
