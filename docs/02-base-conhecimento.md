@@ -17,6 +17,7 @@ Descreva como seu agente acessa a base de conhecimento.
 
 Existem duas possibilidades, injetar os dados diretamente no prompt (Ctrl + C, Ctrl + V) ou carregar os arquivos via código, como no exemplo abaixo:
 
+'''
 import pandas as pd
 import json
 
@@ -24,6 +25,7 @@ perfil = json.load(open('./data/perfil_investidor.json'))
 transacoes = pd.read_csv('./data/transacoes.csv')
 historico = pd.read_csv('./data/historico_atendimento.csv')
 produtos = json.load(open('./data/produtos_financeiros.json'))
+'''
 
 Como os dados são usados no prompt?
 
@@ -33,7 +35,7 @@ Para simplificar, podemos simplesmente "injetar" os dados em nosso prompt, agarn
 ---
 
 ## Exemplo de Contexto Montado
-
+'''
 DADOS DO CLIENTE E PERFIL (data/perfil_investidor.json):
 {
   "nome": "João Silva",
@@ -115,3 +117,4 @@ PRODUTOS DISPONIVEIS PARA ENSINO (data/produtos_financeiros.json):
     "indicado_para": "Perfil arrojado com foco no longo prazo"
   }
 ]
+'''
