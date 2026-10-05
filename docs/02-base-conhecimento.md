@@ -2,10 +2,11 @@
 
 ## Dados Utilizados
 
-Dados Utilizados
 
 perfil_investidor.json	- Personalizar as explicações sobre as dúvidas e necessidades de aprendizado do cliente.
+
 produtos_financeiros.json	-	Conhecer os produtos disponíveis para que eles possam ser ensinados ao cliente.
+
 transacoes.csv	-	Analisar padrão de gastos do cliente e usar essas informações de forma didática.
 
 ---
